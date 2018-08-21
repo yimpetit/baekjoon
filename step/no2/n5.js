@@ -1,0 +1,10 @@
+var fs = require('fs');
+var n = fs.readFileSync('n5.txt').toString().split(' ');
+// var n = fs.readFileSync('/dev/stdin').toString().split(' ');
+var a = n[0]*1;
+var b = n[1]*1;
+var c = n[2]*1;
+console.log((a+b)%c);
+console.log((a%c+b%c)%c);
+console.log((a*b)%c);
+console.log((a%c*b%c)%c);

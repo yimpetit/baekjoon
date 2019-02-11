@@ -7,7 +7,7 @@ for(var i=1;i<=tcn;i++){
   var b=tc[1];
   console.log(gcm(a,b));
 }
-function gcd(m,n){
+function gcd(m,n){   /////최대공약수
   var r=0;
   while(1){
     r=m%n;
@@ -18,7 +18,7 @@ function gcd(m,n){
     }
   }
 }
-function gcm(m,n){
+function gcm(m,n){  /////최소공배수
   return m*n/gcd(m,n);
 }
 
